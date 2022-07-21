@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".BmiTipsActivity">
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="13dp"
+        android:text="PROFILE"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/img2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/calculatebtn"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#D16002"
+        android:text="Calculate BMI"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="314dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="TIPS"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ttl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:text="UNDERWEIGHT"
+        android:textColor="#FFA500"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img1"
+        />
+
+    <TextView
+        android:id="@+id/ttl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginEnd="88dp"
+        android:text="NORMAL"
+        android:textColor="#FFA500"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ttl1"
+        app:layout_constraintTop_toBottomOf="@+id/img2" />
+
+    <TextView
+        android:id="@+id/ttl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:text="OVERWEIGHT"
+        android:textColor="#FFA500"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img3" />
+
+    <TextView
+        android:id="@+id/ttl4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="119dp"
+        android:layout_marginEnd="100dp"
+        android:text="OBESE"
+        android:textColor="#FFA500"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ttl3"
+        app:layout_constraintTop_toBottomOf="@+id/img4" />
+
+    <TextView
+        android:id="@+id/ttl5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="184dp"
+        android:text="EXTREMELY OBESE"
+        android:textColor="#FFA500"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img5" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/bmi_underweight"
+        app:layout_constraintEnd_toStartOf="@+id/img2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt1"
+        />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="33dp"
+        android:src="@drawable/bmi_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img1"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/bmi_overweight"
+        app:layout_constraintEnd_toStartOf="@+id/img4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img1" />
+
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="33dp"
+        android:src="@drawable/bmi_obese"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img3"
+        app:layout_constraintTop_toBottomOf="@+id/img2" />
+
+    <ImageView
+        android:id="@+id/img5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="225dp"
+        android:src="@drawable/bmi_extremely"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

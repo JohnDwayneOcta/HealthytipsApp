@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".bmiunderweight">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="UNDERWEIGHT"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tipseat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle_black_7dp"
+        android:padding="15dp"
+        android:text="What to eat?\n
+        \n • Eating at least 5 portions of a variety
+        \n    of fruit and vegetables every day.
+        \n • Basing meals on potatoes, bread, rice,
+        \n   pasta or other starchy carbohydrates.
+        \n • Having some dairy or dairy alternatives
+        \n   (such as soya drinks and yoghurts).
+        \n • Have whole (full-fat) milk until you
+        \n   build your weight back up."
+        android:textColor="#FFA500"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/txt1"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/tipsexercise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_black_7dp"
+        android:padding="15dp"
+        android:text="What exercise to do?\n
+        \n • Squats. Squats are undoubtedly the
+        \n   best exercise for gaining weight.
+        \n • Push-Ups. Push-ups are a perfect
+        \n   exercise to build both your upper body
+        \n   and core strength.
+        \n • Bench Dips. Bench Dips are simple yet
+        \n   useful exercises to gain body weight."
+        android:textColor="#FFA500"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tipseat"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="32dp"
+        android:text="BACK"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
